@@ -1,2 +1,2 @@
 FROM debian:jessie
-RUN echo -e '\xe2\x9c\x93 \xe2\x86\x90 This is unicode'
+RUN perl -e 'binmode(STDOUT, ":utf8"); print("\x{2713} Works!\n")'
